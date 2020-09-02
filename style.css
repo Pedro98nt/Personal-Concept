@@ -1,0 +1,443 @@
+*,
+*::before,
+*::after {
+  position: relative;
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: auto;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-gap: 10px;
+  grid-template-columns: 3;
+  grid-template-rows: 4;
+}
+
+.header {
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.hero {
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-column: 2;
+  grid-row: 2;
+}
+
+h1 {
+  color: #e42e70;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+  line-height: 3em;
+}
+
+h2, .link {
+  color: #e42e70;
+  font-weight: bold;
+  font-size: 1em;
+  line-height: 2em;
+}
+
+article {
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-column: 2;
+  grid-row: 3;
+  margin: 2rem 0 0 2rem;
+}
+
+article > div {
+  line-height: 2rem;
+}
+
+footer {
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-column: 2;
+  grid-row: 4;
+  height: 100px;
+  margin: 2rem 0 2rem 0;
+  width: 100%;
+}
+
+.ruler {
+  position: absolute;
+  top: 458px;
+  left: 0;
+  right: 0;
+  border-top: 1px solid red;
+}
+
+.logo-container:hover {
+  -webkit-animation: show-sticker 2s ease-in 1;
+          animation: show-sticker 2s ease-in 1;
+}
+
+.desk {
+  position: relative;
+  height: 500px;
+  width: 750px;
+}
+@media only screen and (max-width: 600px) {
+  .desk {
+    height: 300px;
+    width: 450px;
+  }
+}
+
+.laptop {
+  position: absolute;
+  height: 70%;
+  width: 68%;
+  top: 10%;
+  left: 15%;
+}
+
+.desk > img {
+  height: 100%;
+  width: 100%;
+}
+
+.logo-container--sass {
+  position: absolute;
+  width: 15%;
+  top: 10%;
+  left: 8%;
+}
+.logo-container--sass:hover {
+  -webkit-animation: show-sticker--sass 2s ease-in 1;
+          animation: show-sticker--sass 2s ease-in 1;
+}
+
+.sass-logo {
+  width: 100%;
+  -webkit-transform: rotateZ(-20deg);
+          transform: rotateZ(-20deg);
+}
+
+.logo-container--js {
+  position: absolute;
+  width: 15%;
+  top: 5%;
+  right: 8%;
+}
+
+.js-logo {
+  width: 100%;
+}
+
+.logo-container--css {
+  position: absolute;
+  width: 10%;
+  bottom: 5%;
+  right: 36%;
+}
+
+.css-logo {
+  width: 100%;
+}
+
+.logo-container--html {
+  position: absolute;
+  width: 10%;
+  bottom: 5%;
+  left: 40%;
+}
+
+.html-logo {
+  width: 100%;
+}
+
+.logo-container--github {
+  position: absolute;
+  width: 15%;
+  bottom: 50%;
+  left: 20%;
+}
+
+.github-logo {
+  width: 100%;
+}
+
+.logo-container--bitbucket {
+  position: absolute;
+  width: 12%;
+  bottom: 5%;
+  left: 10%;
+}
+
+.bitbucket-logo {
+  width: 100%;
+}
+
+.logo-container--codepen {
+  position: absolute;
+  width: 18%;
+  bottom: 35%;
+  right: 15%;
+}
+
+.codepen-logo {
+  width: 100%;
+}
+
+.logo-container--json {
+  position: absolute;
+  width: 10%;
+  bottom: 5%;
+  left: 25%;
+}
+
+.json-logo {
+  width: 100%;
+}
+
+.logo-container--angular {
+  position: absolute;
+  width: 15%;
+  bottom: 3%;
+  right: 20%;
+}
+
+.angular-logo {
+  width: 100%;
+}
+
+.logo-container--react {
+  position: absolute;
+  width: 25%;
+  top: 5%;
+  right: 30%;
+}
+
+.react-logo {
+  width: 100%;
+}
+
+.logo-container--git {
+  position: absolute;
+  width: 10%;
+  bottom: 5%;
+  right: 8%;
+}
+
+.git-logo {
+  width: 100%;
+}
+
+.logo-container--grunt {
+  position: absolute;
+  width: 8%;
+  top: 50%;
+  left: 33%;
+}
+
+.grunt-logo {
+  width: 100%;
+}
+
+.logo-container--node {
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 5%;
+}
+
+.node-logo {
+  width: 100%;
+}
+
+.logo-container--npm {
+  position: absolute;
+  width: 10%;
+  top: 10%;
+  left: 30%;
+}
+
+.npm-logo {
+  width: 100%;
+}
+
+.logo-container--php {
+  position: absolute;
+  width: 10%;
+  top: 40%;
+  left: 5%;
+}
+
+.php-logo {
+  width: 100%;
+}
+
+.logo-container--oracle {
+  position: absolute;
+  width: 25%;
+  top: 68%;
+  right: 5%;
+}
+
+.oracle-logo {
+  width: 100%;
+}
+
+.logo-container--java {
+  position: absolute;
+  width: 5%;
+  top: 25%;
+  left: 40%;
+}
+
+.java-logo {
+  width: 100%;
+}
+
+.modal-logo-card {
+  position: fixed;
+  z-index: 1;
+  right: 10%;
+  top: 0;
+  bottom: 0;
+  width: 50%;
+  overflow: auto;
+  /* Enable scroll if needed */
+}
+
+.shadow-container {
+  display: none;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+.modal-logo-card {
+  display: none;
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  height: 70%;
+  width: 40%;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px #111;
+}
+
+.modal-content {
+  display: grid;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  grid-gap: 12px;
+  grid-template-columns: 3;
+  grid-template-rows: 3;
+  height: 30%;
+  width: 100%;
+}
+
+.modal--close {
+  display: grid;
+  grid-column: 3;
+  grid-row: 1;
+  color: #aaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.modal-logo {
+  display: grid;
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.modal-body {
+  display: grid;
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.modal--close:hover,
+.modal--close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@-webkit-keyframes show-sticker--sass {
+  20%, 80% {
+    z-index: 1;
+    -webkit-transform: scale(3, 3) translate(40%, 5%);
+            transform: scale(3, 3) translate(40%, 5%);
+  }
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+
+@keyframes show-sticker--sass {
+  20%, 80% {
+    z-index: 1;
+    -webkit-transform: scale(3, 3) translate(40%, 5%);
+            transform: scale(3, 3) translate(40%, 5%);
+  }
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes show-sticker {
+  20%, 80% {
+    z-index: 1;
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
+  }
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
+@keyframes show-sticker {
+  20%, 80% {
+    z-index: 1;
+    -webkit-transform: scale(3, 3);
+            transform: scale(3, 3);
+  }
+  0%, 100% {
+    -webkit-transform: scale(1, 1);
+            transform: scale(1, 1);
+  }
+}
